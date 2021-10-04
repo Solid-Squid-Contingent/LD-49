@@ -7249,6 +7249,7 @@ function startEndingDialog(ending) {
 		dialog[ending.id].src,
 		ending.id,
 		function() {
+			window.top.location.href = 'https://solid-squid-contingent.itch.io/hikari-3?password=how%20deep%20I%20am'
 			var isLocked = ending.property && ending.property.locked === true;
 			if (isLocked) {
 				isEnding = false;
@@ -10267,6 +10268,10 @@ Object.defineProperty(exports, '__esModule', { value: true });
 <body onload='startExportedGame()'>
 <!-- GAME CANVAS -->
 <canvas id='game'></canvas>
+<audio controls autoplay loop hidden>
+  <source src="1-2_ambience.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
 </body>
 
 

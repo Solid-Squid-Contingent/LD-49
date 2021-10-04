@@ -1,0 +1,26 @@
+Audio:
+<audio controls autoplay loop hidden>
+  <source src="index.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
+
+
+Links:	
+	In Bitsy: Add window.top.location.href = 'https://itch.io/' in the function in startEndingDialog
+
+	In FlickGame: In mouseDown, add
+	if (currentIndex == 15)
+      {
+        window.top.location.href = 'https://itch.io/'
+      }
+
+  In PuzzleScript: In nextLevel(), replace goToTitleScreen() with window.top.location.href = 'https://itch.io/'
+
+  Twine: Replace window.location.assign(t) with window.top.location.href = t
+
+
+Premade Bitsy Hacks used:
+First Game: Dynamic Background Color, Exit From Dialog (Both from Borksy)
+Second Game: Dynamic Background Color, Exit From Dialog (Both from Borksy)
+Third Game: End from Dialog (https://github.com/seleb/bitsy-hacks/blob/95f4bbe97c203a872cfe58f43ceee8eb366c3596/dist/end-from-dialog.js)

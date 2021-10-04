@@ -1519,7 +1519,7 @@ DLG 0
 """
 Is this... {clr3}a toy{clr3}? 
 It feels {clr3}warm{clr3} to the touch. Is it mine? 
-No... It is not. But who's is it then? 
+No... It is not. But whose is it then? 
 I feel like it belongs to someone who is important to me. 
 {clr3}The most important person{clr3}. {printSprite "A"}
 """
@@ -8269,6 +8269,7 @@ function startEndingDialog(ending) {
 		dialog[ending.id].src,
 		ending.id,
 		function() {
+			window.top.location.href = 'https://solid-squid-contingent.itch.io/hikari-5?password=My%20soul'
 			var isLocked = ending.property && ending.property.locked === true;
 			if (isLocked) {
 				isEnding = false;
@@ -11287,6 +11288,12 @@ Object.defineProperty(exports, '__esModule', { value: true });
 <body onload='startExportedGame()'>
 <!-- GAME CANVAS -->
 <canvas id='game'></canvas>
+
+<audio controls autoplay loop hidden>
+  <source src="3-4_walking_lonelyKindaSad.wav" type="audio/wav">
+Your browser does not support the audio element.
+</audio>
+
 </body>
 
 
