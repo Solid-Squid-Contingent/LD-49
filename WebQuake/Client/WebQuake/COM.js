@@ -273,9 +273,9 @@ COM.LoadFile = async function(filename)
 		{
 			return
 		}
-		else if (filename != 'gfx/inter.lmp' && filename != 'gfx/conback.lmp' && filename != 'gfx/colormap.lmp' && filename != 'gfx/palette.lmp')
+		else if (filename != 'gfx/finale.lmp' && filename != 'gfx/inter.lmp' && filename != 'gfx/conback.lmp' && filename != 'gfx/colormap.lmp' && filename != 'gfx/palette.lmp')
 		{
-			return COM.LoadFile('gfx/inter.lmp');
+			return COM.LoadFile('gfx/finale.lmp');
 		}
 	}
 
